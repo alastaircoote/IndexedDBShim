@@ -3,6 +3,7 @@
 .idea
 .tmp_*
 .DS_Store
+.vscode
 sauce_connect.log
 sc_*
 npm-debug.log

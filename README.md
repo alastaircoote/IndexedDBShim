@@ -1,5 +1,11 @@
 # IndexedDB Polyfill
 
+## Rollup fork
+
+An in development experiment in trying to shrink down the size of the bundle as well as use Rollup for faster execution. Very minimal size gains so far, haven't profiled the load time benefits.
+
+------
+
 ***Important note to those upgrading from version 2: Besides some
 backward-breaking (though standard-compliant) behavioral fixes (see
 [CHANGES](CHANGES.md)), there are changes coming in version 3 which will

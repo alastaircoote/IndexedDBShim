@@ -4,9 +4,10 @@ import {IDBRequest} from './IDBRequest';
 import * as util from './util';
 import IDBObjectStore from './IDBObjectStore';
 import CFG from './CFG';
-import {EventTargetFactory} from 'eventtarget';
+import EventTarget from 'eventtarget';
 import SyncPromise from 'sync-promise';
 
+const {EventTargetFactory} = EventTarget;
 let uniqueID = 0;
 const listeners = ['onabort', 'oncomplete', 'onerror'];
 const readonlyProperties = ['objectStoreNames', 'mode', 'db', 'error'];

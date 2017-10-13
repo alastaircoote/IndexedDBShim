@@ -1,5 +1,7 @@
-import {ShimEventTarget, ShimEvent, ShimCustomEvent} from 'eventtarget';
+import EventTarget from 'eventtarget';
 import * as util from './util';
+
+const {ShimEventTarget, ShimEvent, ShimCustomEvent} = EventTarget;
 
 function createEvent (type, debug, evInit) {
     const ev = new ShimEvent(type, evInit);

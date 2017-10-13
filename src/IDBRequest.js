@@ -1,6 +1,8 @@
 import {createDOMException} from './DOMException';
-import {EventTargetFactory} from 'eventtarget';
+import EventTarget from 'eventtarget';
 import * as util from './util';
+
+const {EventTargetFactory} = EventTarget;
 
 const listeners = ['onsuccess', 'onerror'];
 const readonlyProperties = ['source', 'transaction', 'readyState'];

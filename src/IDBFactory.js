@@ -10,7 +10,12 @@ import IDBTransaction from './IDBTransaction';
 import IDBDatabase from './IDBDatabase';
 import CFG from './CFG';
 import SyncPromise from 'sync-promise';
-import path from 'path';
+
+const path = {
+    join () {
+        return Array.from(arguments).join('/');
+    }
+};
 
 const getOrigin = () => (typeof location !== 'object' || !location) ? 'null' : location.origin;
 const hasNullOrigin = () => CFG.checkOrigin !== false && (getOrigin() === 'null');
